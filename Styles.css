@@ -1,0 +1,774 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo1 {
+    width: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 24px;
+    margin: 0 30px 0 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: darkblue;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+
+
+.introduction {
+    max-width: 50%;
+}
+
+.hero-image {
+    width: 50%;
+    height: auto;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 26px;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #0056b3;
+}
+
+.about-button i {
+    margin-left: 5px;
+}
+
+/* About Me Section */
+.about-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Contact Information */
+.info-text {
+    color:black; /* Change the text color for all info to white */
+}
+
+strong {
+    color: blue; /* Change label color to blue */
+}
+
+/* Social Media Icons */
+.social-logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-logos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
+    border-radius: 50%; /* Makes the background circular */
+    color: #fff; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Space between logos */
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+/* Set colors for each social media platform */
+.social-logos a[href*="linkedin.com"] {
+    background-color: #0077b5; /* LinkedIn color */
+}
+
+.social-logos a[href*="github.com"] {
+    background-color: #333; /* GitHub color */
+}
+
+.social-logos a[href*="twitter.com"] {
+    background-color: #1da1f2; /* Twitter color */
+}
+
+.social-logos a[href*="telegram.org"] {
+    background-color: #0088cc; /* Telegram background */
+}
+
+.social-logos a[href*="instagram.com"] {
+    background-color: #e1306c; /* Instagram color */
+}
+
+.social-logos a:hover {
+    filter: brightness(0.8); /* Darkens background color on hover */
+    transform: scale(1.1); /* Slightly scales up on hover */
+}
+#abdul{
+      font-size: 16px;
+}
+#abdul_1{
+    font-size: 16px;
+}
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #0056b3;
+}
+
+.resume-button i {
+    margin-left: 5px;
+}
+.passionate-web-developer {
+    margin-bottom: 5px; /* Adjust this value as needed */
+  }
+  
+  .about-heading {
+    margin-top: 0; /* Ensures no extra space */
+  }
+  .about-me-icon {
+    margin-right: 10px; /* Space between the icon and text */
+    color: #000; /* Icon color */
+    font-size: 36px; /* Adjust size as needed */
+  }
+  .skills-section {
+    background-color: #1E90FF; /* Blue background */
+    padding: 50px 20px;
+    color: white;
+}
+  
+.skills-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+.skills-heading .highlight {
+    color: violet;
+}
+  
+.skills-icon {
+    font-size: 36px;
+    margin-right: 10px;
+    color: white;
+}
+  
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.skill-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.skill-logo {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 15px;
+    border-radius: 50%;
+}
+  
+.skill-details {
+    flex: 1;
+}
+  
+.skill-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+  
+.skill-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+  
+.skill-percentage {
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+}
+  
+/* Different progress bar colors */
+.html-bar {
+    background-color: #FF6347; /* HTML - Tomato */
+}
+  
+.css-bar {
+    background-color: #4682B4; /* CSS - Steel Blue */
+}
+  
+.js-bar {
+    background-color: #FFD700; /* JavaScript - Gold */
+}
+  
+.java-bar {
+    background-color: #F08080; /* Java - Light Coral */
+}
+  
+.python-bar {
+    background-color: #32CD32; /* Python - Lime Green */
+}
+  
+.nodejs-bar {
+    background-color: #6A5ACD; /* Node.js - Slate Blue */
+}
+  
+.react-bar {
+    background-color: #00BFFF; /* React.js - Deep Sky Blue */
+}
+  
+.c-bar {
+    background-color: #A52A2A; /* C Language - Brown */
+}
+.skill-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the skill box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#education {
+    background-color: #f0f8ff; /* Light blue background for the education section */
+    padding: 60px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .heading-icon {
+    font-size: 40px; /* Increased font size for "My" */
+  }
+  
+  .heading-violet {
+    font-size: 40px; /* Increased font size for "Education" */
+    color: #6a0dad; /* Violet color */
+  }
+  
+  .education-quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap between each education entry */
+  }
+  
+  .education-entry {
+    display: flex;
+    gap: 30px; /* Increased gap between image and text */
+    background-color: white;
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-entry:hover {
+    background-color: #e8f4fc; /* Light hover background effect */
+    transform: scale(1.05); /* Slight scale to make it appear like it is coming forward */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for highlight effect */
+  }
+  
+  .education-image img {
+    width: 180px; /* Larger width for the image */
+    height: 120px; /* Larger height for the image */
+    object-fit: cover; /* Ensures the image covers the space properly without distortion */
+    border-radius: 8px; /* Slight rounded corners to make it look polished */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+  
+  .education-details h3 {
+    font-size: 1.6em; /* Slightly larger font for the title */
+    font-weight: bold;
+  }
+  
+  .education-university {
+    font-size: 1.2em; /* Larger font for university name */
+    color: #555;
+  }
+  
+  .pursuing {
+    font-size: 1.2em;
+    color: green;
+  }
+  
+  .education-notable {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .education-activities {
+    font-size: 1.1em;
+  }
+  
+  .bachelor-entry:hover .education-title {
+    color: #007bff; /* Blue color for Bachelor on hover */
+  }
+  
+  .zp-entry:hover .education-title {
+    color: #6a0dad; /* Violet color for ZP High School on hover */
+  }
+  .projects {
+    padding: 60px 0;
+    background-color: #f0f0f0; /* Light grey background */
+    background-image: url('your-background-image.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .projects .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .projects .heading h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .projects .heading h2 span {
+    color: #6a0dad; /* Violet color */
+  }
+  
+  .projects .heading h2 i {
+    margin-right: 10px;
+    font-size: 40px;
+    color: #6a0dad; /* Violet color for the icon */
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center; /* Center the project card */
+    align-items: center;
+    gap: 20px; /* Add gap between project cards */
+    margin-top: 30px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    width: 300px; /* Consistent width for all cards */
+    height: 400px; /* Fixed height to keep cards uniform */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 60%; /* Fixed height for images to avoid resizing */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .project-info {
+    padding: 20px;
+    text-align: center; /* Center the content inside the project card */
+  }
+  
+  .project-info .caption {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  .project-info .btn {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px 25px; /* Larger button */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin-top: 15px; /* Add some spacing above the button */
+    cursor: pointer; /* Change cursor to pointer for the button */
+  }
+  
+  .project-info .btn:hover {
+    background-color: #5c0a9e;
+  }
+  .knowledge {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #4b6cb7, #182848); /* New gradient from blue to dark blue */
+  }
+  
+  .knowledge .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .knowledge .heading h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff; /* White text for better contrast */
+  }
+  
+  .knowledge .heading h2 span {
+    color: #ff7f50; /* Orange color for the "Knowledge" word */
+  }
+  
+  .knowledge .heading h2 i {
+    margin-right: 10px;
+    font-size: 40px;
+    color: #ff7f50; /* Orange color for the icon */
+  }
+  
+  .knowledge-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Gap between sections */
+    margin-top: 30px;
+  }
+  
+  .knowledge-section {
+    width: 45%; /* Adjusted width for each section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ff7f50, #6a0dad); /* Gradient background for each section */
+  }
+  
+  .knowledge-section h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .knowledge-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .knowledge-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .knowledge-section ul li::before {
+    content: '\2022';
+    color: #fff; /* White bullet points */
+    margin-right: 10px;
+  }
+  
+  .divider {
+    width: 1px;
+    background-color: #6a0dad; /* Violet color for the divider */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divider i {
+    font-size: 30px;
+    color: #000; /* Black color for the logo */
+  }
+  .contact {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f6d365, #fda085); /* Gradient Background */
+    text-align: center;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Heading with mic icon using Font Awesome */
+.heading h2 {
+    font-size: 36px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.heading h2 .fa-microphone {
+    font-size: 40px;
+    color: #6a0dad; /* Violet color for the mic icon */
+}
+
+/* Contact Content */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Box Shadow Container for Image and Form */
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Left Image (Box Shadow) */
+.contact-image {
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-image img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Contact Form (Box Shadow) */
+.contact-form {
+    width: 50%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Add color to the icons for name, email, phone, and message logos */
+.contact-form .form-group label i {
+    color: blue; /* You can change the color here */
+    margin-right: 8px; /* Optional: space between the icon and label */
+}
+
+/* Example for each specific field */
+.contact-form .form-group.name i {
+    color: blue;
+}
+
+.contact-form .form-group.email i {
+    color: blue;
+}
+
+.contact-form .form-group.phone i {
+    color: blue;
+}
+
+.contact-form .form-group.message i {
+    color: blue;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form .form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button with send icon */
+.contact-form .btn-submit {
+    background-color: #6a0dad;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #5c0a9e;
+}
+
+.contact-form .btn-submit .fa-paper-plane {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
+    .contact-image,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+  
+  
